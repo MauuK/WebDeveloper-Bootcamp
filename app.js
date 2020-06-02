@@ -99,7 +99,7 @@ app.get("/", function (req, res) {
  app.put("/locations/:id", function(req, res){
     Info.findByIdAndUpdate(req.params.id, req.body.info, function(err, infoupdated){
         if(err){
-            console.log(err);
+            console.log(""+err);
         } else {
           var showUrl = "/locations/" + infoupdated._id;
           res.redirect(showUrl);
