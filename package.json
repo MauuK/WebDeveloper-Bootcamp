@@ -1,0 +1,32 @@
+{
+  "name": "webdevelopment",
+  "version": "1.0.0",
+  "description": "destination wedding locations",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "heroku": "^7.41.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.5.7",
+    "mongoose": "^5.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauuK/WebDeveloper-Bootcamp.git"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "samruddhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauuK/WebDeveloper-Bootcamp/issues"
+  },
+  "homepage": "https://github.com/MauuK/WebDeveloper-Bootcamp#readme"
+}
