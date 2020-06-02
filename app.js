@@ -10,11 +10,14 @@ app.set('view engine', 'ejs');
 app.use(express.static("public"));
 app.use(methodOverride('_method'));
 
-mongoose.connect('mongodb://localhost:27017/alteredinfo_app').then(() => {
-console.log("Connected to Database");
-}).catch((err) => {
-    console.log("Not Connected to Database ERROR! ", err);
-});
+const URI = "mongodb+srv://samruddhi123:sammy123@cluster0-pf6ye.mongodb.net/test?retryWrites=true&w=majority";
+
+const connDB = async() => {
+    await mongoose.connect(URI, {useNewUrlParser: true});
+    console.log("Connected to db!")
+} 
+
+connDB();
 
  var infoSchema = new mongoose.Schema({
     title: String,
