@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to top Destination Wedding locations </title>
+<link rel ="stylesheet" type="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style type="text/css">
+    body {
+        background: #076585; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #076585, #fff); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #076585, #fff);
+    }
+
+  </style>
+</head>
+<body>
+
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+          <div class ="header item"><i class ="code icon"></i>Destination Wedding Site</div> 
+          <a href="/" class="item">Home</a>
+          <a href="/locations/new" class="item">New Post</a>
+        </div>
+      </div>
+
+    <div class="ui main text container">
+        <div class="ui huge header">Destination Wedding Site</div>
+     <div class="ui top attached segment">
+ <div class="ui divided items">
+     <% info.forEach(function(info){ %>
+      <div class="item">
+         <div class="image">
+           <img src="<%= info.image %>">
+         </div>
+         <div class="content">
+           <a class="header"><%= info.title %></a>
+           <div class="description">
+             <p><%= info.body.substring(0,100); %></p>
+           </div>
+           <div class="extra">
+	        <a href="/locations/<%=info._id %>" class="ui floated basic violet button">
+	          Read More
+              <i class="right chevron icon"></i>
+              </a>
+            </div>
+         </div>
+       </div>
+     <% }); %>
+ </div>
+ </div>
+     
+   </div>
+
+
+</body>
+</html> 
+

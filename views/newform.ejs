@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to top Destination Wedding locations </title>
+<link rel ="stylesheet" type="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<style type="text/css">
+    body {
+        background: #22c1c3; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #22c1c3, #fdbb2d); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #22c1c3, #fdbb2d);
+    }
+    .ui.menu .item img.logo {
+      margin-right: 1.5em;
+    }
+    .main.container {
+      margin-top: 7em;
+    }
+    .wireframe {
+      margin-top: 2em;
+    }
+    .ui.footer.segment {
+      margin: 5em 0em 0em;
+      padding: 5em 0em;
+    }
+    i.icon {
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+    
+    <div class="ui fixed inverted menu">
+        <div class="ui container">
+          <div class ="header item"><i class ="code icon"></i>Destination Wedding Site</div> 
+          <a href="/" class="item">Home</a>
+          <a href="/locations/new" class="item">New Post</a>
+        </div>
+      </div>
+
+    <div class="ui main text container segment">
+        <div class="ui huge header">New Post</div>
+        <form class="ui form" action="/locations" method="POST">
+            <div class="field">
+                <label>Title</label>
+                <input type="text" name="info[title]">
+            </div>
+            <div class="field">
+                <label>Image</label>
+                <input type="text" name="info[image]">
+            </div>
+            <div class="field">
+                <label>Post Content</label>
+                <textarea name="info[body]"></textarea>
+            </div>
+            <button class="ui big violet basic button">Create Post</button>
+        </form>
+    </div>
+
+</body>
+</html>
