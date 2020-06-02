@@ -1,0 +1,31 @@
+#titlething
+{
+    padding-top: 2px;
+    padding-bottom: 0px;
+    font: italic small-caps bold 50px/50px Georgia, serif;
+}
+
+#transit
+{
+    outline: 0.5rem solid khaki;
+    box-shadow: 0 0 0 1rem skyblue;
+    border-radius: 12px;
+    margin: 2rem;
+    padding-top: 2;
+    margin: auto;
+    margin-top: 10rem;
+    width: 200%;
+    transform: translate(0, -10%);
+}
+
+#styling
+{
+    box-shadow: 0 0 0 1rem skyblue;
+    border-radius: 12px;
+    margin: 2rem;
+    padding-top: 2;
+    margin: auto;
+    margin-top: 10rem;
+    width: 200%;
+    transform: translate(0, -10%);
+}
