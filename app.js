@@ -123,10 +123,13 @@ app.get("/", function (req, res) {
    })
  });
 
-let port = 3100;
+//let port = 3100;
 //var server_port = process.env.YOUR_PORT || process.env.PORT || 3100;
 //var server_host = process.env.YOUR_HOST || '0.0.0.0';
-app.listen(process.env.PORT || port, function () {
+
+const host = '0.0.0.0';
+const port = process.env.PORT || 3100;
+app.listen(port, function () {
     console.log("helooo:" + port);
 });
 
