@@ -52,19 +52,19 @@ body {
   }
   .slideshow li:nth-child(2) { 
     background-image: url(https://i.ibb.co/SwwrP2B/second.jpg);
-    animation-delay: 10s; 
+    animation-delay: 5s; 
   }
   .slideshow li:nth-child(3) { 
-    background-image: url(https://i.ibb.co/DkdpBq7/third.jpg);
-    animation-delay: 20s; 
+    background-image: url(https://i.ibb.co/GWtx60S/third.jpg);
+    animation-delay: 10s; 
   }
   .slideshow li:nth-child(4) { 
     background-image: url(https://i.ibb.co/SsKLDsd/fourth.jpg);
-    animation-delay: 30s; 
+    animation-delay: 15s; 
   }
   .slideshow li:nth-child(5) { 
     background-image: url(https://i.ibb.co/PwsMzkX/fifth.jpg);
-    animation-delay: 40s; 
+    animation-delay: 20s; 
   }
 
   @keyframes imageAnimation { 

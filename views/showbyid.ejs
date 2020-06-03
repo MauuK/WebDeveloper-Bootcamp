@@ -4,7 +4,14 @@
 <title>Welcome to top Destination Wedding locations </title>
 <link rel ="stylesheet" type="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 <link rel="stylesheet" href="/stylesheets/app.css">
+<style type="text/css">
+    body {
+        background: #cc95c0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #cc95c0, #dbd4b4, #7aa1d2);
+    }
 
+  </style>
 </head>
 <body>
     <div class="ui fixed inverted menu">
@@ -15,14 +22,11 @@
         </div>
       </div>
 
-      
-      
-    
       <div id="transit" class="ui main text container">
         <h4 id = titlething class="ui orange header"><%=info.title%></h4>
      <div class="ui top attached segment">
          <div class="item">
-            <img  class="ui centered rounded image" src="<%= info.image %>">
+            <img id = "image_padding" class="ui centered rounded image" src="<%= info.image %>">
              <div class="content">
                   <div class="description">
                      <p><%- info.body %></p>
@@ -36,14 +40,6 @@
      </div>
      
  </div>
- <script>
-    document.querySelector("#transit")
-    .transition({
-      animation : 'jiggle',
-     duration  : 500,
-     interval  : 200
-});
-  </script>
-
+ 
 </body>
 </html>

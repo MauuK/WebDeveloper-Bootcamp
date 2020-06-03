@@ -18,6 +18,11 @@
     transform: translate(0, -10%);
 }
 
+#image_padding
+{
+    padding-bottom: 5.5px;
+}
+
 #styling
 {
     box-shadow: 0 0 0 1rem skyblue;
