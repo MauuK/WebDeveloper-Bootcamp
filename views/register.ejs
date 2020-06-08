@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to top Destination Wedding locations </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel ="stylesheet" type="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" href="/stylesheets/app.css">
+</head>
+<body>
+    <div id="menu-header" class="ui fixed inverted menu">
+        <div class="ui container">
+          <div class ="header item"><i class ="code icon"></i>Destination Wedding Site</div> 
+          <a href="/" class="item">Home</a>
+          <a href="/locations/new" class="item">New Post</a>
+        </div>
+        
+        <div class="right menu">
+            <a class="ui item" href="/register"> 
+                 Sign up
+            </a>
+            <a class="ui item" href="/login">
+                Login
+            </a>
+            <a class="ui item" href="/logout">
+                Logout
+            </a>
+        </div>
+      </div>
+
+      <div id = errandsuc class="container">
+        <% if(error && error.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+              <%= error %>
+          </div>
+      <% } %>
+      <% if(success && success.length > 0){ %>
+          <div class="alert alert-success" role="alert">
+              <%= success %>
+          </div>
+      <% } %>
+  </div>
+
+    <div id="transitform" class="ui main text container segment">
+        <div class="ui huge header">Sign Up</div>
+        <form class="ui form" action="/register" method="post">
+            <div class="field">
+                <label>username</label>
+                <input type="text" name="username" placeholder="username">
+            </div>
+            <div class="field">
+                <label>password</label>
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <button class="ui big blue blue button">Sign In</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
