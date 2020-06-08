@@ -20,6 +20,17 @@
           <a href="/" class="item">Home</a>
           <a href="/locations/new" class="item">New Post</a>
         </div>
+        <div class="right menu">
+          <a class="ui item" href="/register"> 
+               Sign up
+          </a>
+          <a class="ui item" href="/login">
+              Login
+          </a>
+          <a class="ui item" href="/logout">
+              Logout
+          </a>
+      </div>
       </div>
 
       <div id="transit" class="ui main text container">
@@ -33,13 +44,16 @@
                   </div>
              </div>
          </div>
-         <a href="/locations/<%=info._id%>/edit" class="ui inverted green button">Update Post</a>
-         <form style="display: inline" method="POST" action="/locations/<%=info._id%>?_method=DELETE">
-            <button class="ui inverted red button" type="submit">Delete Post</button>
-        </form>
+         <% if(currentUser && info.author.id.equals(currentUser._id)){ %>
+          <a href="/locations/<%= info._id %>/edit" class="ui inverted green button">Update</a>
+          <form style="display: inline" id="delete-form" action="/locations/<%= info._id %>?_method=DELETE" method="POST">
+              <button class="ui inverted red button" type="submit">Delete</button>
+          </form>
+        <% }%>
      </div>
      
  </div>
  
 </body>
 </html>
+

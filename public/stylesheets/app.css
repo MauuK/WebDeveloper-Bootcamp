@@ -18,9 +18,25 @@
     transform: translate(0, -10%);
 }
 
+#transitform
+{
+    box-shadow: 0 0 0 0.2rem skyblue;
+    border-radius: 10px;
+    margin: 1.5rem;
+    padding-top: 2;
+    margin: auto;
+    margin-top: 2rem;
+    width: 60%;
+    transform: translate(0, -10%);   
+}
+
 #image_padding
 {
     padding-bottom: 5.5px;
+}
+#errandsuc
+{
+    margin-top: 75px;
 }
 
 #styling

@@ -2,7 +2,9 @@
 <html>
 <head>
 <title>Welcome to top Destination Wedding locations </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel ="stylesheet" type="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" href="/stylesheets/app.css">
 <style type="text/css">
     body {
         background: #076585; /* fallback for old browsers */
@@ -20,10 +22,33 @@
           <a href="/" class="item">Home</a>
           <a href="/locations/new" class="item">New Post</a>
         </div>
+        <div class="right menu">
+            <a class="ui item" href="/register"> 
+                 Sign up
+            </a>
+            <a class="ui item" href="/login">
+                Login
+            </a>
+            <a class="ui item" href="/logout">
+                Logout
+            </a>
+        </div>
       </div>
 
+      <div id = errandsuc class="container">
+        <% if(error && error.length > 0){ %>
+          <div class="alert alert-danger" role="alert">
+              <%= error %>
+          </div>
+      <% } %>
+      <% if(success && success.length > 0){ %>
+          <div class="alert alert-success" role="alert">
+              <%= success %>
+          </div>
+      <% } %>
+  </div>
+
     <div class="ui main text container">
-        <div class="ui huge header">Destination Wedding Site</div>
      <div class="ui top attached segment">
  <div class="ui divided items">
      <% info.forEach(function(info){ %>
