@@ -54,15 +54,15 @@
         <form class="ui form" action="/locations" method="POST">
             <div class="field">
                 <label>Title</label>
-                <input type="text" name="info[title]">
+                <input type="text" name="info[title]" required>
             </div>
             <div class="field">
                 <label>Image</label>
-                <input type="text" name="info[image]">
+                <input type="text" name="info[image]" pattern="https?://.+" required oninvalid="this.setCustomValidity('Image url should use https only')"/>
             </div>
             <div class="field">
                 <label>Post Content</label>
-                <textarea name="info[body]"></textarea>
+                <textarea name="info[body]" required></textarea>
             </div>
             <button class="ui big violet basic button">Create Post</button>
         </form>
@@ -70,3 +70,4 @@
 
 </body>
 </html>
+
